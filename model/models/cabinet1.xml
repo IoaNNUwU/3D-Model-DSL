@@ -181,19 +181,19 @@
     <S tip="dx">sh/2</S>
     <S tip="dy">upYaVs</S>
     <S tip="dz">18</S>
-    <S tip="x">sh/2</S>
+    <S tip="x">sh/2/2</S>
     <S tip="y">((vs-18)-upYaVs/2)</S>
     <S tip="z">(upGl-18/2)</S>
-    <S tip="pz">upYa2Angle</S>
+    <S tip="py">upYa2Angle</S>
   </E>
   <E m= "mlWhite" kr="15">
     <S tip="dx">sh/2</S>
     <S tip="dy">upYaVs</S>
     <S tip="dz">18</S>
-    <S tip="x">(-sh/2)</S>
+    <S tip="x">(-sh/2)/2</S>
     <S tip="y">((vs-18)-upYaVs/2)</S>
     <S tip="z">(upGl-18/2)</S>
-    <S tip="pz">upYa2Angle</S>
+    <S tip="py">upYa2Angle</S>
   </E>
   <E m= "mlMain" kr="15">
     <S tip="dx">(leftYaSh-18)</S>
