@@ -3,6 +3,7 @@
 <M Name="Шкаф непонятный">
 
   <S id="mlMain" Name="Основной" Ml="ДСП" kr="48" km="15" t="/Img/dsp.jpg" >84</S>
+  <S id="mlWhite" Name="Декоративный" Ml="ДСП" kr="48" km="15" t="/Img/dsp.jpg" >82</S>
 
   <S id="sh" Name="Ширина" min="2000" max="3000" step="1" >2800</S>
   <S id="leftYaSh" Name="Ширина_нижнего_ящика" min="500" max="1200" step="1" >1000</S>
@@ -108,6 +109,30 @@
     <S tip="x">downYaSh/2</S>
     <S tip="y">((((vs-18)-upYaVs)-(upPolVs-18))-18/2)</S>
     <S tip="z">(upGl-18)/2</S>
+  </E>
+  <E m= "mlWhite" kr="15">
+    <S tip="dx">18</S>
+    <S tip="dy">(upPolVs-18)</S>
+    <S tip="dz">((upGl-18)-18)</S>
+    <S tip="x">((((-sh/2)+downYaSh)+0*18)+1*upPolPartSh)</S>
+    <S tip="y">(((vs-18)-upYaVs)-(upPolVs-18)/2)</S>
+    <S tip="z">(18+((upGl-18)-18)/2)</S>
+  </E>
+  <E m= "mlWhite" kr="15">
+    <S tip="dx">18</S>
+    <S tip="dy">(upPolVs-18)</S>
+    <S tip="dz">((upGl-18)-18)</S>
+    <S tip="x">((((-sh/2)+downYaSh)+1*18)+2*upPolPartSh)</S>
+    <S tip="y">(((vs-18)-upYaVs)-(upPolVs-18)/2)</S>
+    <S tip="z">(18+((upGl-18)-18)/2)</S>
+  </E>
+  <E m= "mlWhite" kr="15">
+    <S tip="dx">18</S>
+    <S tip="dy">(upPolVs-18)</S>
+    <S tip="dz">((upGl-18)-18)</S>
+    <S tip="x">((((-sh/2)+downYaSh)+2*18)+3*upPolPartSh)</S>
+    <S tip="y">(((vs-18)-upYaVs)-(upPolVs-18)/2)</S>
+    <S tip="z">(18+((upGl-18)-18)/2)</S>
   </E>
   <E m= "mlMain" kr="15">
     <S tip="dx">18</S>
