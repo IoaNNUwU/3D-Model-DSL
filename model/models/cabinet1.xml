@@ -105,7 +105,7 @@
     <S tip="dx">(sh-downYaSh)</S>
     <S tip="dy">18</S>
     <S tip="dz">(upGl-18)</S>
-    <S tip="x">(sh-downYaSh)/2</S>
+    <S tip="x">downYaSh/2</S>
     <S tip="y">((((vs-18)-upYaVs)-(upPolVs-18))-18/2)</S>
     <S tip="z">(upGl-18)/2</S>
   </E>
@@ -144,7 +144,7 @@
     <S tip="dx">(sh-downYaSh)</S>
     <S tip="dy">(upPolVs-18)</S>
     <S tip="dz">18</S>
-    <S tip="x">(sh-downYaSh)/2</S>
+    <S tip="x">downYaSh/2</S>
     <S tip="y">(((vs-18)-upYaVs)-(upPolVs-18)/2)</S>
     <S tip="z">18/2</S>
   </E>
