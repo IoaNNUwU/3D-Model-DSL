@@ -3,7 +3,7 @@
 <M Name="Шкаф непонятный">
 
   <S id="mlMain" Name="Основной" Ml="ДСП" kr="48" km="15" t="/Img/dsp.jpg" >84</S>
-  <S id="mlWhite" Name="Декоративный" Ml="ДСП" kr="48" km="15" t="/Img/dsp.jpg" >82</S>
+  <S id="mlWhite" Name="Декоративный" Ml="ДСП" kr="48" km="15" t="/Img/dsp.jpg" >74</S>
 
   <S id="sh" Name="Ширина" min="2000" max="3000" step="1" >2800</S>
   <S id="leftYaSh" Name="Ширина_нижнего_ящика" min="500" max="1200" step="1" >1000</S>
