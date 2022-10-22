@@ -16,8 +16,8 @@
   <S id="upPolVs" Name="Высота_верхней_полки" min="100" max="500" step="1" >270</S>
   <S id="downGl" Name="Глубина_нижней_части" min="700" max="1500" step="1" >1200</S>
   <S id="upGl" Name="Глубина_верхней_части" min="500" max="700" step="1" >600</S>
-  <S id="upYa1Angle" Name="Верхняя_дверца" min="0" max="160" step="1" >10</S>
-  <S id="upYa2Angle" Name="Верхняя_дверца" min="0" max="160" step="1" >5</S>
+  <S id="upYa1Angle" Name="Верхняя_дверца_1" min="0" max="87" step="1" >10</S>
+  <S id="upYa2Angle" Name="Верхняя_дверца_2" min="0" max="87" step="1" >5</S>
   <S id="leftYaAngle" Name="Боковая_дверца" min="0" max="100" step="1" >5</S>
   <S id="downYaAngle" Name="Нижний_ящик" min="0" max="650" step="1" >13</S>
 
