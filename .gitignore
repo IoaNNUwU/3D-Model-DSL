@@ -6,9 +6,9 @@
 *.vscode
 
 # build files
-build/
-model/build/
-dsl/build/
+build/*
+model/build/*
+dsl/build/*
 
 # Compiled class file
 *.class
