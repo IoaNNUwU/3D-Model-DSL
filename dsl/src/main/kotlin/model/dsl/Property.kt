@@ -35,6 +35,9 @@ class Property private constructor(
         this.value
     }
 
+    fun toRadians() = Property("${this.value}/180*3,1416")
+    fun toAngle() = Property("${this.value}*180/3,1416")
+
     operator fun plus(other: Property) =
         Property("(${this.value}+${other.value})")
     operator fun plus(other: Number) =
