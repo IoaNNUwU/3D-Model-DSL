@@ -97,8 +97,16 @@
   <E m= "mlMain" kr="15">
     <S tip="dx">18</S>
     <S tip="dy">(upYaVs-18)</S>
-    <S tip="dz">(upGl-18)</S>
+    <S tip="dz">((upGl-18)-18)</S>
     <S tip="y">((((vs-18)-upYaVs)+18)+(upYaVs-18)/2)</S>
+    <S tip="z">(((upGl-18)-18)/2+18)</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">(sh-downYaSh)</S>
+    <S tip="dy">18</S>
+    <S tip="dz">(upGl-18)</S>
+    <S tip="x">(sh-downYaSh)/2</S>
+    <S tip="y">((((vs-18)-upYaVs)-(upPolVs-18))-18/2)</S>
     <S tip="z">(upGl-18)/2</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -108,5 +116,36 @@
     <S tip="x">(((-sh/2)+downYaSh)-18/2)</S>
     <S tip="y">(((vs-18)-upYaVs)-(((vs-(downYaVs+20))-18)-upYaVs)/2)</S>
     <S tip="z">(upGl-18)/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">sh</S>
+    <S tip="dy">(upYaVs-18)</S>
+    <S tip="dz">18</S>
+    <S tip="y">((((vs-18)-upYaVs)+18)+(upYaVs-18)/2)</S>
+    <S tip="z">18/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">(downYaSh-18)</S>
+    <S tip="dy">(((vs-(downYaVs+20))-18)-upYaVs)</S>
+    <S tip="dz">18</S>
+    <S tip="x">((-sh)+(downYaSh-18)/2)</S>
+    <S tip="y">(((vs-18)-upYaVs)-(((vs-(downYaVs+20))-18)-upYaVs)/2)</S>
+    <S tip="z">18/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">leftYaSh</S>
+    <S tip="dy">(downYaVs-2*18)</S>
+    <S tip="dz">18</S>
+    <S tip="x">((-sh)+leftYaSh/2)</S>
+    <S tip="y">(20+downYaVs/2)</S>
+    <S tip="z">18/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">(sh-downYaSh)</S>
+    <S tip="dy">(upPolVs-18)</S>
+    <S tip="dz">18</S>
+    <S tip="x">(sh-downYaSh)/2</S>
+    <S tip="y">(((vs-18)-upYaVs)-(upPolVs-18)/2)</S>
+    <S tip="z">18/2</S>
   </E>
 </M>
