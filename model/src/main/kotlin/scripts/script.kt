@@ -7,7 +7,7 @@ import model.dsl.*
 fun main() = model("cabinet1", "Шкаф непонятный") {
 
     val основной_материал = Material("mlMain", "Основной", "ДСП", 48, 15, "/Img/dsp.jpg") { 84 }
-    val белый_материал = Material("mlWhite", "Декоративный", "ДСП", 48, 15, "/Img/dsp.jpg") { 82 }
+    val белый_материал = Material("mlWhite", "Декоративный", "ДСП", 48, 15, "/Img/dsp.jpg") { 74 }
 
     val ширина = Property("sh", "Ширина", 2000, 3000) { 2800 }
 
