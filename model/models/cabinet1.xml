@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<M Name="Шкаф непонятный">
+
+  <S id="mlMain" Name="Основной" Ml="ДСП" kr="48" km="15" t="/Img/dsp.jpg" >84</S>
+
+  <S id="sh" Name="Ширина" min="2000" max="3000" step="1" >2300</S>
+  <S id="leftYaSh" Name="Ширина_бокового_ящика" min="500" max="1200" step="1" >1100</S>
+  <S id="downYaSh" Name="Ширина_нижнего_ящика" min="250" max="500" step="1" >350</S>
+  <S id="upPolPartSh" Name="Ширина_раздела" min="100" max="300" step="1" >150</S>
+  <S id="vs" Name="Высота" min="2000" max="3000" step="1" >2022</S>
+  <S id="tableVs" Name="Высота_стола" min="1000" max="1500" step="1" >1200</S>
+  <S id="downYaVs" Name="Высота_нижнего_ящика" min="200" max="600" step="1" >300</S>
+  <S id="upYaVs" Name="Высота_верхних_ящиков" min="100" max="500" step="1" >300</S>
+  <S id="upPolVs" Name="Высота_верхней_полки" min="100" max="500" step="1" >300</S>
+  <S id="downGl" Name="Глубина_нижней_части" min="700" max="1500" step="1" >1200</S>
+  <S id="upGl" Name="Глубина_верхней_части" min="500" max="700" step="1" >600</S>
+
+  <E m= "mlMain" kr="15">
+    <S tip="dx">18</S>
+    <S tip="dy">((downYaVs+20)-18)</S>
+    <S tip="dz">downGl</S>
+    <S tip="x">((-sh/2)-18/2)</S>
+    <S tip="y">((downYaVs/2+20/2)-18/2)</S>
+    <S tip="z">downGl/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">(leftYaSh+18)</S>
+    <S tip="dy">18</S>
+    <S tip="dz">downGl</S>
+    <S tip="x">(((-sh/2)+leftYaSh/2)-18/2)</S>
+    <S tip="y">((downYaVs+20)-18/2)</S>
+    <S tip="z">downGl/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">leftYaSh</S>
+    <S tip="dy">18</S>
+    <S tip="dz">downGl</S>
+    <S tip="x">((-sh/2)+leftYaSh/2)</S>
+    <S tip="y">(20+18/2)</S>
+    <S tip="z">downGl/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">18</S>
+    <S tip="dy">tableVs</S>
+    <S tip="dz">downGl</S>
+    <S tip="x">(((-sh/2)+leftYaSh)+18/2)</S>
+    <S tip="y">tableVs/2</S>
+    <S tip="z">downGl/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">(sh-downYaSh)</S>
+    <S tip="dy">18</S>
+    <S tip="dz">downGl</S>
+    <S tip="x">(sh/2-(sh-downYaSh)/2)</S>
+    <S tip="y">(tableVs+18/2)</S>
+    <S tip="z">downGl/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">18</S>
+    <S tip="dy">vs</S>
+    <S tip="dz">upGl</S>
+    <S tip="x">(sh/2+18/2)</S>
+    <S tip="y">vs/2</S>
+    <S tip="z">upGl/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">((sh-leftYaSh)-18)</S>
+    <S tip="dy">300</S>
+    <S tip="dz">18</S>
+    <S tip="x">(sh/2-((sh-leftYaSh)-18)/2)</S>
+    <S tip="y">(tableVs-300/2)</S>
+    <S tip="z">(200+18/2)</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">18</S>
+    <S tip="dy">(vs-(downYaVs+20))</S>
+    <S tip="dz">upGl</S>
+    <S tip="x">((-sh/2)-18/2)</S>
+    <S tip="y">((20+downYaVs)+(vs-(downYaVs+20))/2)</S>
+    <S tip="z">upGl/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">sh</S>
+    <S tip="dy">18</S>
+    <S tip="dz">upGl</S>
+    <S tip="y">(vs-18/2)</S>
+    <S tip="z">upGl/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">sh</S>
+    <S tip="dy">18</S>
+    <S tip="dz">(upGl-18)</S>
+    <S tip="y">(((vs-18)-upYaVs)+18/2)</S>
+    <S tip="z">(upGl-18)/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">18</S>
+    <S tip="dy">(upYaVs-18)</S>
+    <S tip="dz">(upGl-18)</S>
+    <S tip="y">((((vs-18)-upYaVs)+18)+(upYaVs-18)/2)</S>
+    <S tip="z">(upGl-18)/2</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">18</S>
+    <S tip="dy">(((vs-(downYaVs+20))-18)-upYaVs)</S>
+    <S tip="dz">(upGl-18)</S>
+    <S tip="x">(((-sh/2)+downYaSh)-18/2)</S>
+    <S tip="y">(((vs-18)-upYaVs)-(((vs-(downYaVs+20))-18)-upYaVs)/2)</S>
+    <S tip="z">(upGl-18)/2</S>
+  </E>
+</M>

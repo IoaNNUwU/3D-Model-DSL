@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<M Name="Тумба какая-то">
+
+  <S id="ml" Name="ДСП1" Ml="ДСП" kr="48" km="15" t="/Img/dsp.jpg" >84</S>
+
+  <S id="sh" Name="Ширина" min="2000" max="2500" step="1" >2300</S>
+  <S id="tableSh" Name="Ширина_cтола" min="1000" max="2500" step="1" >1000</S>
+  <S id="vs" Name="Высота" min="2000" max="3000" step="1" >2022</S>
+
+  <E m= "ml" kr="15">
+    <S tip="dx">(sh/2)</S>
+    <S tip="dy">((((vs+sh)+25)/2)*Math.sin((2+(vs/150))))</S>
+    <S tip="dz">(tableSh+13)</S>
+  </E>
+  <E m= "ml" kr="15">
+    <S tip="dx">(13+vs)</S>
+    <S tip="dy">sh</S>
+    <S tip="dz">((sh/2)+tableSh)</S>
+  </E>
+  <E m= "ml" kr="15">
+    <S tip="dx">Math.cos(tableSh)</S>
+    <S tip="dy">((sh/2)+15)</S>
+    <S tip="dz">vs</S>
+    <S tip="x">15</S>
+  </E>
+</M>
