@@ -1,5 +1,5 @@
 # 3D-Model-DSL
-A Kotlin DSL for making 3d models for [the site](https://tumbusam.ru/ "Тумбу сам").__
+A Kotlin DSL for making 3d models for [the site](https://tumbusam.ru/ "Тумбу сам").  
 Examples can be found in models module.
 ## Example
 Following kotlin code
