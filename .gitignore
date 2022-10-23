@@ -2,8 +2,8 @@
 *.gradle
 
 # IDE files
-.idea/*
-.vscode/*
+.idea
+.vscode
 
 # build files
 build/*
