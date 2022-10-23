@@ -19,7 +19,7 @@
   <S id="upYa1Angle" Name="Верхняя_дверца_1" min="0" max="87" step="1" >10</S>
   <S id="upYa2Angle" Name="Верхняя_дверца_2" min="0" max="87" step="1" >5</S>
   <S id="leftYaAngle" Name="Боковая_дверца" min="0" max="100" step="1" >5</S>
-  <S id="downYaAngle" Name="Нижний_ящик" min="0" max="650" step="1" >13</S>
+  <S id="downYaAngle" Name="Нижний_ящик" min="0" max="2000" step="1" >13</S>
 
   <E m= "mlMain" kr="15">
     <S tip="dx">18</S>
@@ -203,5 +203,34 @@
     <S tip="y">((20+downYaVs)+(((vs-(downYaVs+20))-18)-upYaVs)/2)</S>
     <S tip="z">((upGl-18/2)+leftYaSh/2*Math.sin(leftYaAngle/180*3.1416))</S>
     <S tip="py">(-leftYaAngle/180*3.1416)</S>
+  </E>
+  <E m= "mlWhite" kr="15">
+    <S tip="dx">(downYaSh-1)</S>
+    <S tip="dy">((downYaVs-2*18)-1)</S>
+    <S tip="dz">18</S>
+    <S tip="x">((-sh/2)+downYaSh/2)</S>
+    <S tip="y">(20+downYaVs/2)</S>
+    <S tip="z">((downGl-18/2)+downYaAngle)</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">(downYaSh-20)</S>
+    <S tip="dy">((downYaVs-2*18)-20)</S>
+    <S tip="dz">18</S>
+    <S tip="x">((-sh/2)+downYaSh/2)</S>
+    <S tip="y">(20+downYaVs/2)</S>
+    <S tip="z">((18+18/2)+downYaAngle)</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="dx">(downYaSh-20)</S>
+    <S tip="dy">18</S>
+    <S tip="dz">((downGl-18)-18)</S>
+    <S tip="x">((-sh/2)+downYaSh/2)</S>
+    <S tip="y">(((20+18)+10)+18/2)</S>
+    <S tip="z">((2*18+((downGl-18)-18)/2)+downYaAngle)</S>
+  </E>
+  <E m= "mlMain" kr="15">
+    <S tip="x">(((-sh)+10)+downYaSh/2)</S>
+  </E>
+  <E m= "mlMain" kr="15">
   </E>
 </M>
