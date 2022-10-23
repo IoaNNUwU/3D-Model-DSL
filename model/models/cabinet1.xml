@@ -199,7 +199,7 @@
     <S tip="dx">(leftYaSh-1)</S>
     <S tip="dy">((((vs-(downYaVs+20))-18)-upYaVs)-1)</S>
     <S tip="dz">18</S>
-    <S tip="x">(((-sh/2)+leftYaSh/2)-(Math.cos(leftYaAngle/180*3,1416)-1)*leftYaSh)</S>
+    <S tip="x">(((-sh/2)+leftYaSh/2)+(Math.cos(leftYaAngle/180*3,1416)-1)*leftYaSh/2)</S>
     <S tip="y">((20+downYaVs)+(((vs-(downYaVs+20))-18)-upYaVs)/2)</S>
     <S tip="z">((upGl-18/2)+leftYaSh/2*Math.sin(leftYaAngle/180*3,1416))</S>
   </E>
