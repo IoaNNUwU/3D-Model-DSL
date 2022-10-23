@@ -34,9 +34,8 @@ class Property private constructor(
     } else {
         this.value
     }
-
-    fun toRadians() = Property("${this.value}/180*3,1416")
-    fun toAngle() = Property("${this.value}*180/3,1416")
+    fun toRadians() = Property("${this.value}/180*$PI")
+    fun toAngle() = Property("${this.value}*180/$PI")
 
     operator fun plus(other: Property) =
         Property("(${this.value}+${other.value})")
@@ -60,6 +59,10 @@ class Property private constructor(
 
     operator fun unaryMinus() =
         Property("(-${this.value})")
+
+    companion object {
+        const val PI = 3.1416f
+    }
 }
 
 context(Model)
