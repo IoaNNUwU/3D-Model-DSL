@@ -178,8 +178,8 @@
     <S tip="z">18/2</S>
   </E>
   <E m= "mlWhite" kr="15">
-    <S tip="dx">sh/2</S>
-    <S tip="dy">upYaVs</S>
+    <S tip="dx">(sh/2-1)</S>
+    <S tip="dy">(upYaVs-1)</S>
     <S tip="dz">18</S>
     <S tip="x">sh/2/2</S>
     <S tip="y">(((vs-18)-upYaVs/2)+(Math.cos(upYa1Angle/180*3,1416)-1)*upYaVs/2)</S>
@@ -187,12 +187,20 @@
     <S tip="px">upYa1Angle/180*3,1416</S>
   </E>
   <E m= "mlWhite" kr="15">
-    <S tip="dx">sh/2</S>
-    <S tip="dy">upYaVs</S>
+    <S tip="dx">(sh/2-1)</S>
+    <S tip="dy">(upYaVs-1)</S>
     <S tip="dz">18</S>
     <S tip="x">(-sh/2)/2</S>
     <S tip="y">(((vs-18)-upYaVs/2)+(Math.cos(upYa2Angle/180*3,1416)-1)*upYaVs/2)</S>
     <S tip="z">((upGl-18/2)+upYaVs/2*Math.sin(upYa2Angle/180*3,1416))</S>
     <S tip="px">upYa2Angle/180*3,1416</S>
+  </E>
+  <E m= "mlWhite" kr="15">
+    <S tip="dx">leftYaSh</S>
+    <S tip="dy">(((vs-(downYaVs+20))-18)-upYaVs)</S>
+    <S tip="dz">18</S>
+    <S tip="x">(((-sh)+leftYaSh/2)+(Math.cos(leftYaAngle/180*3,1416)-1)*leftYaSh)</S>
+    <S tip="y">((20+downYaVs)+(((vs-(downYaVs+20))-18)-upYaVs)/2)</S>
+    <S tip="z">((upGl-18/2)+leftYaSh/2*Math.sin(leftYaAngle/180*3,1416))</S>
   </E>
 </M>
