@@ -1,6 +1,7 @@
 # 3D-Model-DSL
-A Kotlin DSL for making 3d models for [the site](https://tumbusam.ru/ "Тумбу сам").  
-Examples can be found in models module.
+A Kotlin DSL for making 3d models for [the site](https://tumbusam.ru/ "Тумбу сам").
+[Example](https://tumbusam.ru/model/Index?id=https://raw.githubusercontent.com/IoaNNUwU/3D-Model-DSL/main/model/models/cabinet1.xml)
+
 ## Example
 Following kotlin code
 ```kotlin
