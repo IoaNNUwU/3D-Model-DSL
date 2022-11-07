@@ -10,6 +10,11 @@ fun model(id: String, Name: String, block: Model.() -> Unit) {
 }
 
 class Model(private val id: String, private val name: String) {
+
+    var x = 0.toProperty()
+    var y = 0.toProperty()
+    var z = 0.toProperty()
+
     private val properties = ArrayList<String>()
     private val textures = ArrayList<String>()
     private val elements = ArrayList<String>()
