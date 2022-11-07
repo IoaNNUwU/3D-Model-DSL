@@ -26,7 +26,7 @@
     <S tip="dy">((downYaVs+20)-18)</S>
     <S tip="dz">downGl</S>
     <S tip="x">((-sh/2)-18/2)</S>
-    <S tip="y">(((downYaVs/2+20/2)-18/2)+(-vs/2))</S>
+    <S tip="y">(((downYaVs/2+20/2)-18/2)+-0.7*vs/2)</S>
     <S tip="z">downGl/2</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -34,7 +34,7 @@
     <S tip="dy">18</S>
     <S tip="dz">downGl</S>
     <S tip="x">(((-sh/2)+downYaSh/2)-18/2)</S>
-    <S tip="y">(((downYaVs+20)-18/2)+(-vs/2))</S>
+    <S tip="y">(((downYaVs+20)-18/2)+-0.7*vs/2)</S>
     <S tip="z">downGl/2</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -42,7 +42,7 @@
     <S tip="dy">18</S>
     <S tip="dz">downGl</S>
     <S tip="x">((-sh/2)+downYaSh/2)</S>
-    <S tip="y">((20+18/2)+(-vs/2))</S>
+    <S tip="y">((20+18/2)+-0.7*vs/2)</S>
     <S tip="z">downGl/2</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -50,7 +50,7 @@
     <S tip="dy">tableVs</S>
     <S tip="dz">downGl</S>
     <S tip="x">(((-sh/2)+downYaSh)+18/2)</S>
-    <S tip="y">(tableVs/2+(-vs/2))</S>
+    <S tip="y">(tableVs/2+-0.7*vs/2)</S>
     <S tip="z">downGl/2</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -58,7 +58,7 @@
     <S tip="dy">18</S>
     <S tip="dz">downGl</S>
     <S tip="x">(sh/2-(sh-leftYaSh)/2)</S>
-    <S tip="y">((tableVs+18/2)+(-vs/2))</S>
+    <S tip="y">((tableVs+18/2)+-0.7*vs/2)</S>
     <S tip="z">downGl/2</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -66,7 +66,7 @@
     <S tip="dy">vs</S>
     <S tip="dz">upGl</S>
     <S tip="x">(sh/2+18/2)</S>
-    <S tip="y">(vs/2+(-vs/2))</S>
+    <S tip="y">(vs/2+-0.7*vs/2)</S>
     <S tip="z">upGl/2</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -74,7 +74,7 @@
     <S tip="dy">300</S>
     <S tip="dz">18</S>
     <S tip="x">(sh/2-((sh-downYaSh)-18)/2)</S>
-    <S tip="y">((tableVs-300/2)+(-vs/2))</S>
+    <S tip="y">((tableVs-300/2)+-0.7*vs/2)</S>
     <S tip="z">(200+18/2)</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -82,28 +82,28 @@
     <S tip="dy">(vs-(downYaVs+20))</S>
     <S tip="dz">upGl</S>
     <S tip="x">((-sh/2)-18/2)</S>
-    <S tip="y">(((20+downYaVs)+(vs-(downYaVs+20))/2)+(-vs/2))</S>
+    <S tip="y">(((20+downYaVs)+(vs-(downYaVs+20))/2)+-0.7*vs/2)</S>
     <S tip="z">upGl/2</S>
   </E>
   <E m= "mlMain" kr="15">
     <S tip="dx">sh</S>
     <S tip="dy">18</S>
     <S tip="dz">upGl</S>
-    <S tip="y">((vs-18/2)+(-vs/2))</S>
+    <S tip="y">((vs-18/2)+-0.7*vs/2)</S>
     <S tip="z">upGl/2</S>
   </E>
   <E m= "mlMain" kr="15">
     <S tip="dx">sh</S>
     <S tip="dy">18</S>
     <S tip="dz">(upGl-18)</S>
-    <S tip="y">((((vs-18)-upYaVs)+18/2)+(-vs/2))</S>
+    <S tip="y">((((vs-18)-upYaVs)+18/2)+-0.7*vs/2)</S>
     <S tip="z">(upGl-18)/2</S>
   </E>
   <E m= "mlMain" kr="15">
     <S tip="dx">18</S>
     <S tip="dy">(upYaVs-18)</S>
     <S tip="dz">((upGl-18)-18)</S>
-    <S tip="y">(((((vs-18)-upYaVs)+18)+(upYaVs-18)/2)+(-vs/2))</S>
+    <S tip="y">(((((vs-18)-upYaVs)+18)+(upYaVs-18)/2)+-0.7*vs/2)</S>
     <S tip="z">(((upGl-18)-18)/2+18)</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -111,7 +111,7 @@
     <S tip="dy">18</S>
     <S tip="dz">(upGl-18)</S>
     <S tip="x">leftYaSh/2</S>
-    <S tip="y">(((((vs-18)-upYaVs)-(upPolVs-18))-18/2)+(-vs/2))</S>
+    <S tip="y">(((((vs-18)-upYaVs)-(upPolVs-18))-18/2)+-0.7*vs/2)</S>
     <S tip="z">(upGl-18)/2</S>
   </E>
   <E m= "mlWhite" kr="15">
@@ -119,7 +119,7 @@
     <S tip="dy">(upPolVs-18)</S>
     <S tip="dz">((upGl-18)-18)</S>
     <S tip="x">((((-sh/2)+leftYaSh)+0*18)+1*upPolPartSh)</S>
-    <S tip="y">((((vs-18)-upYaVs)-(upPolVs-18)/2)+(-vs/2))</S>
+    <S tip="y">((((vs-18)-upYaVs)-(upPolVs-18)/2)+-0.7*vs/2)</S>
     <S tip="z">(18+((upGl-18)-18)/2)</S>
   </E>
   <E m= "mlWhite" kr="15">
@@ -127,7 +127,7 @@
     <S tip="dy">(upPolVs-18)</S>
     <S tip="dz">((upGl-18)-18)</S>
     <S tip="x">((((-sh/2)+leftYaSh)+1*18)+2*upPolPartSh)</S>
-    <S tip="y">((((vs-18)-upYaVs)-(upPolVs-18)/2)+(-vs/2))</S>
+    <S tip="y">((((vs-18)-upYaVs)-(upPolVs-18)/2)+-0.7*vs/2)</S>
     <S tip="z">(18+((upGl-18)-18)/2)</S>
   </E>
   <E m= "mlWhite" kr="15">
@@ -135,7 +135,7 @@
     <S tip="dy">(upPolVs-18)</S>
     <S tip="dz">((upGl-18)-18)</S>
     <S tip="x">((((-sh/2)+leftYaSh)+2*18)+3*upPolPartSh)</S>
-    <S tip="y">((((vs-18)-upYaVs)-(upPolVs-18)/2)+(-vs/2))</S>
+    <S tip="y">((((vs-18)-upYaVs)-(upPolVs-18)/2)+-0.7*vs/2)</S>
     <S tip="z">(18+((upGl-18)-18)/2)</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -143,14 +143,14 @@
     <S tip="dy">(((vs-(downYaVs+20))-18)-upYaVs)</S>
     <S tip="dz">(upGl-18)</S>
     <S tip="x">(((-sh/2)+leftYaSh)-18/2)</S>
-    <S tip="y">((((vs-18)-upYaVs)-(((vs-(downYaVs+20))-18)-upYaVs)/2)+(-vs/2))</S>
+    <S tip="y">((((vs-18)-upYaVs)-(((vs-(downYaVs+20))-18)-upYaVs)/2)+-0.7*vs/2)</S>
     <S tip="z">(upGl-18)/2</S>
   </E>
   <E m= "mlMain" kr="15">
     <S tip="dx">sh</S>
     <S tip="dy">(upYaVs-18)</S>
     <S tip="dz">18</S>
-    <S tip="y">(((((vs-18)-upYaVs)+18)+(upYaVs-18)/2)+(-vs/2))</S>
+    <S tip="y">(((((vs-18)-upYaVs)+18)+(upYaVs-18)/2)+-0.7*vs/2)</S>
     <S tip="z">18/2</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -158,7 +158,7 @@
     <S tip="dy">(((vs-(downYaVs+20))-18)-upYaVs)</S>
     <S tip="dz">18</S>
     <S tip="x">((-sh/2)+(leftYaSh-18)/2)</S>
-    <S tip="y">((((vs-18)-upYaVs)-(((vs-(downYaVs+20))-18)-upYaVs)/2)+(-vs/2))</S>
+    <S tip="y">((((vs-18)-upYaVs)-(((vs-(downYaVs+20))-18)-upYaVs)/2)+-0.7*vs/2)</S>
     <S tip="z">18/2</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -166,7 +166,7 @@
     <S tip="dy">(downYaVs-2*18)</S>
     <S tip="dz">18</S>
     <S tip="x">((-sh/2)+downYaSh/2)</S>
-    <S tip="y">((20+downYaVs/2)+(-vs/2))</S>
+    <S tip="y">((20+downYaVs/2)+-0.7*vs/2)</S>
     <S tip="z">18/2</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -174,7 +174,7 @@
     <S tip="dy">(upPolVs-18)</S>
     <S tip="dz">18</S>
     <S tip="x">leftYaSh/2</S>
-    <S tip="y">((((vs-18)-upYaVs)-(upPolVs-18)/2)+(-vs/2))</S>
+    <S tip="y">((((vs-18)-upYaVs)-(upPolVs-18)/2)+-0.7*vs/2)</S>
     <S tip="z">18/2</S>
   </E>
   <E m= "mlWhite" kr="15">
@@ -182,7 +182,7 @@
     <S tip="dy">(upYaVs-1)</S>
     <S tip="dz">18</S>
     <S tip="x">sh/2/2</S>
-    <S tip="y">((((vs-18)-upYaVs/2)+(Math.cos(upYa1Angle/180*3.1416)-1)*upYaVs/2)+(-vs/2))</S>
+    <S tip="y">((((vs-18)-upYaVs/2)+(Math.cos(upYa1Angle/180*3.1416)-1)*upYaVs/2)+-0.7*vs/2)</S>
     <S tip="z">((upGl-18/2)+upYaVs/2*Math.sin(upYa1Angle/180*3.1416))</S>
     <S tip="px">upYa1Angle/180*3.1416</S>
   </E>
@@ -191,7 +191,7 @@
     <S tip="dy">(upYaVs-1)</S>
     <S tip="dz">18</S>
     <S tip="x">(-sh/2)/2</S>
-    <S tip="y">((((vs-18)-upYaVs/2)+(Math.cos(upYa2Angle/180*3.1416)-1)*upYaVs/2)+(-vs/2))</S>
+    <S tip="y">((((vs-18)-upYaVs/2)+(Math.cos(upYa2Angle/180*3.1416)-1)*upYaVs/2)+-0.7*vs/2)</S>
     <S tip="z">((upGl-18/2)+upYaVs/2*Math.sin(upYa2Angle/180*3.1416))</S>
     <S tip="px">upYa2Angle/180*3.1416</S>
   </E>
@@ -200,7 +200,7 @@
     <S tip="dy">((((vs-(downYaVs+20))-18)-upYaVs)-1)</S>
     <S tip="dz">18</S>
     <S tip="x">(((-sh/2)+leftYaSh/2)+(Math.cos(leftYaAngle/180*3.1416)-1)*leftYaSh/2)</S>
-    <S tip="y">(((20+downYaVs)+(((vs-(downYaVs+20))-18)-upYaVs)/2)+(-vs/2))</S>
+    <S tip="y">(((20+downYaVs)+(((vs-(downYaVs+20))-18)-upYaVs)/2)+-0.7*vs/2)</S>
     <S tip="z">((upGl-18/2)+leftYaSh/2*Math.sin(leftYaAngle/180*3.1416))</S>
     <S tip="py">(-leftYaAngle/180*3.1416)</S>
   </E>
@@ -209,7 +209,7 @@
     <S tip="dy">((downYaVs-2*18)-1)</S>
     <S tip="dz">18</S>
     <S tip="x">((-sh/2)+downYaSh/2)</S>
-    <S tip="y">((20+downYaVs/2)+(-vs/2))</S>
+    <S tip="y">((20+downYaVs/2)+-0.7*vs/2)</S>
     <S tip="z">((downGl-18/2)+downYaAngle)</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -217,7 +217,7 @@
     <S tip="dy">((downYaVs-2*18)-20)</S>
     <S tip="dz">18</S>
     <S tip="x">((-sh/2)+downYaSh/2)</S>
-    <S tip="y">((20+downYaVs/2)+(-vs/2))</S>
+    <S tip="y">((20+downYaVs/2)+-0.7*vs/2)</S>
     <S tip="z">((18+18/2)+downYaAngle)</S>
   </E>
   <E m= "mlMain" kr="15">
@@ -225,7 +225,7 @@
     <S tip="dy">18</S>
     <S tip="dz">((downGl-2*18)-18)</S>
     <S tip="x">((-sh/2)+downYaSh/2)</S>
-    <S tip="y">((((20+18)+10)+18/2)+(-vs/2))</S>
+    <S tip="y">((((20+18)+10)+18/2)+-0.7*vs/2)</S>
     <S tip="z">((2*18+((downGl-2*18)-18)/2)+downYaAngle)</S>
   </E>
   <E m= "mlMain" kr="15">
