@@ -230,18 +230,18 @@
   </E>
   <E m= "mlMain" kr="15">
     <S tip="dx">18</S>
-    <S tip="dy">((downYaVs-2*18)-20)</S>
+    <S tip="dy">(((downYaVs-2*18)-20)-18)</S>
     <S tip="dz">((downGl-2*18)-18)</S>
     <S tip="x">(((-sh/2)+60)+18/2)</S>
-    <S tip="y">((20+downYaVs/2)-18/2)+ ((-0.7*vs/2))</S>
+    <S tip="y">((20+downYaVs/2)+18/2)+ ((-0.7*vs/2))</S>
     <S tip="z">((2*18+((downGl-2*18)-18)/2)+downYaAngle)+ ((-0.5*sh/2))</S>
   </E>
   <E m= "mlMain" kr="15">
     <S tip="dx">18</S>
-    <S tip="dy">((downYaVs-2*18)-20)</S>
+    <S tip="dy">(((downYaVs-2*18)-20)-18)</S>
     <S tip="dz">((downGl-2*18)-18)</S>
     <S tip="x">((((-sh/2)+downYaSh)-60)-18/2)</S>
-    <S tip="y">((20+downYaVs/2)-18/2)+ ((-0.7*vs/2))</S>
+    <S tip="y">((20+downYaVs/2)+18/2)+ ((-0.7*vs/2))</S>
     <S tip="z">((2*18+((downGl-2*18)-18)/2)+downYaAngle)+ ((-0.5*sh/2))</S>
   </E>
 </M>
