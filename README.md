@@ -1,8 +1,9 @@
 # 3D-Model-DSL
 A Kotlin DSL for making 3d models for [the site](https://tumbusam.ru/ "Тумбу сам").   
 
-[Example](https://tumbusam.ru/model/Index?id=https://raw.githubusercontent.com/IoaNNUwU/3D-Model-DSL/main/model/models/cabinet1.xml "Шкаф непонятный")
-
+[Example](https://tumbusam.ru/model/Index?id=https://raw.githubusercontent.com/IoaNNUwU/3D-Model-DSL/main/model/models/cabinet1.xml "Шкаф непонятный")   
+Model xml files can be found in model/models folder   
+Script can be found in model/src/main/kotlin/scripts folder
 ## Example
 Following kotlin code
 ```kotlin
